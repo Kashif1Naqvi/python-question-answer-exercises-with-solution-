@@ -38,6 +38,75 @@ now = datetime.datetime.now()
 print(now.strftime("%y-%m-%d %H:%M:%S"))
 # Output  =>  20-02-19 14:33:57
 
+"""
+4. Write a Python program which accepts the radius of a circle from the user and compute the area.
+Sample Output :
+r = 1.1
+Area = 3.8013271108436504
+"""
+import math
+
+r = float(input("Enter the radius of the cirle:"))
+print(f"Radius of the circle str{r} is {math.pi*r**2} ")
+
+
+"""
+5. Write a Python program which accepts the user's first and last name and print them in reverse order with a space between them.
+"""
+first_name = input("Enter the first name:")
+last_name = input("enter the last name:")
+print("Hello "+last_name + "  " + first_name )
+
+"""Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers.
+Sample data : 3, 5, 7, 23
+Output :
+List : ['3', ' 5', ' 7', ' 23']
+Tuple : ('3', ' 5', ' 7', ' 23')
+"""
+data = input("Sample data :")
+list = data.split(',')
+print(f"list is  {list} ")
+print(f"tuple is {tuple(list)}")
+
+"""
+7. Write a Python program to accept a filename from the user and print the extension of that.
+Sample filename : abc.java
+Output : java
+"""
+filename  = input("Sample filename :")
+file_ext  = filename.split('.')
+print("Output: ",file_ext[-1]) #file_ext[-1] I use because every time accept after dot end of array index
+
+"""
+8. Write a Python program to display the first and last colors from the following list.
+color_list = ["Red","Green","White" ,"Black"]
+"""
+color_list = ["Red","Green","White" ,"Black"]
+print("%s %s"%(color_list[0],color_list[-1]))
+#OR
+print(f"first color:> {color_list[0]} and last color is:=> {color_list[-1]} ")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """ other code:
 
     def pos_only_arg(*,arg):
