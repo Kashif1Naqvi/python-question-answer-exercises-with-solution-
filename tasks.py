@@ -75,7 +75,7 @@ Output : java
 """
 filename  = input("Sample filename :")
 file_ext  = filename.split('.')
-print("Output: ",file_ext[-1]) #file_ext[-1] I use because every time accept after dot end of array index
+print("Output: ",file_ext[-1]) #file_ext[-1] I use because every time accept after dot end of the array index
 
 """
 8. Write a Python program to display the first and last colors from the following list.
@@ -86,7 +86,39 @@ print("%s %s"%(color_list[0],color_list[-1]))
 #OR
 print(f"first color:> {color_list[0]} and last color is:=> {color_list[-1]} ")
 
+"""
+9. Write a Python program to display the examination schedule. (extract the date from exam_st_date).
+exam_st_date = (11, 12, 2014)
+Sample Output : The examination will start from : 11 / 12 / 2014
+"""
+exam_st_date = (11, 12, 2014)
 
+print("The examination will start from %i / %i / %i :"%(exam_st_date)) #%i or %s is format specifier that tell the type integer or string
+
+"""
+	10. Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+	Sample value of n is 5
+	Expected Result : 615
+"""
+n = input("Sample value of n is ")
+n1 = int("%s"% n)
+n2 = int("%s%s"% (n,n))
+n3 = int("%s%s%s"% (n,n,n))
+print(n1+n2+n3)
+
+"""
+11. Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s).
+Sample function : abs()
+Expected Result :
+abs(number) -> number
+Return the absolute value of the argument.
+"""
+print(abs.__doc__)
+
+"""
+12. Write a Python program to print the calendar of a given month and year.
+Note : Use 'calendar' module.
+"""
 
 
 
